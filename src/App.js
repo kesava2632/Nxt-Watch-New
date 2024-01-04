@@ -1,23 +1,26 @@
-import logo from './logo.svg';
 import './App.css';
+import { BrowserRouter, Route, Routes } from 'react-router-dom'
+import LoginPage from './components/LoginPage/LoginPage';
+import HomePage from './components/HomePage/HomePage';
+import VideoDetails from './components/VideoDetails/VideoDetails';
+import Trending from './components/TrendingPage/Trending';
+import Gaming from './components/GamingPage/Gaming';
+import SavedVideos from './components/SavedVideos/SavedVideos';
+
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <BrowserRouter>
+        <Routes>
+          <Route path='/' element={<LoginPage />} />
+          <Route path='/Home' element={<HomePage />} />
+          <Route path='/Trending' element={<Trending />} />
+          <Route path='/Gaming' element={<Gaming />} />
+          <Route path='/SavedVideos' element={<SavedVideos />} />
+          <Route path='/videos/:id' element={<VideoDetails />} />
+        </Routes>
+      </BrowserRouter>
     </div>
   );
 }

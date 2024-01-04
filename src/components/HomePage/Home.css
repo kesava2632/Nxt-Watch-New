@@ -1,0 +1,69 @@
+.home-container {
+    display: flex;
+    flex-direction: row;
+    width: 100vw;
+    background-color: #f1f5f9;
+}
+
+.home-silky-container {
+    position: sticky;
+    position: -webkit-sticky;
+}
+
+.home-side-container {
+    display: flex;
+    flex-direction: column;
+    overflow-y: scroll;
+    width: 100%;
+    background-color: #f1f5f9;
+    
+}
+
+.banner-image-container {
+    background-image: url('https://assets.ccbp.in/frontend/react-js/nxt-watch-banner-bg.png');
+    background-size: cover;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 93%;
+    height: 20vh;
+    padding: 50px;
+    
+}
+
+.model-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.banner-image {
+    object-fit: fill;
+    width: 250px;
+}
+
+.get-it-button {
+    color: #181818;
+    background-color: transparent;
+    height: 30px;
+    width: 100px;
+    margin: 20px;
+    border-color: #181818;
+    border-style: solid;
+    text-align: center;
+}
+
+.banner-text {
+    color: #181818;
+    font-family: Roboto;
+}
+
+.banner-remove-icon {
+    background-color: transparent;
+    border: none;
+    margin-left: 10px;
+    outline: none;
+    cursor: pointer;
+    border-radius: 10px;
+}
